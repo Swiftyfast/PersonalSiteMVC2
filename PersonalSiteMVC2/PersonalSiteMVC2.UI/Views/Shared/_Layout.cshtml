@@ -9,20 +9,32 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="~/Content/assets/img/jdsFavicon.ico" />
 
+    <!-- Putting bootstrap in first -->
+    <link href="~/Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Jquery UI stylesheet-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Custom Style sheet -->
+    <link href="~/Content/css/Custom.css" rel="stylesheet" />
 </head>
 <body>
-    <nav @*class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top " id="mainNav"*@>
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">John Swift</a>
+        <a href="javascript:void(0)" class="btn btn-primary pull-right hamburger-pull-right" onclick="toggleNav()" id="menu-btn">&#9776;</a>
 
-        <a @*class="navbar-brand js-scroll-trigger"*@ href="#page-top">John Swift</a>
-        <a href="javascript:void(0)" @*class="btn btn-primary pull-right hamburger-pull-right"*@ onclick="toggleNav()" @*id="menu-btn"*@>&#9776;</a>
-
-        <div @*class="collapse navbar-collapse"*@>
-            <ul @*class="navbar-nav ml-auto" id="navbarResponsive"*@>
-                <li @*class="nav-item mx-0 mx-lg-1"*@><a @*class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"*@ href="@Url.Action("Index", "Home")">Home</a></li>
-                <li @*class="nav-item mx-0 mx-lg-1"*@><a @*class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"*@ href="@Url.Action("Portfolio", "Home")">Portfolio</a></li>
-                <li @*class="nav-item mx-0 mx-lg-1"*@><a @*class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"*@ href="@Url.Action("Links", "Home")">Links</a></li>
-                <li @*class="nav-item mx-0 mx-lg-1"*@><a @*class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"*@ href="@Url.Action("Resume", "Home")">Resume</a></li>
-                <li @*class="nav-item mx-0 mx-lg-1"*@><a @*class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"*@ href="@Url.Action("Contact", "Home")">Contact</a></li>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto" id="navbarResponsive">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="@Url.Action("Index", "Home")">Home</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="@Url.Action("Portfolio", "Home")">Portfolio</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="@Url.Action("Links", "Home")">Links</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="@Url.Action("Resume", "Home")">Resume</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="@Url.Action("Contact", "Home")">Contact</a></li>
             </ul>
         </div>
 
@@ -31,27 +43,27 @@
         @RenderBody()
     </div>
     <!-- Footer-->
-    <footer @*class="footer text-center"*@>
-        <div @*class="container"*@>
-            <div @*class="row"*@>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
                 <!-- Footer Location-->
-                <div @*class="col-lg-4 mb-5 mb-lg-0"*@>
-                    <h4 @*class="text-uppercase mb-4"*@>Location</h4>
-                    <p @*class="lead mb-0"*@>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
                         the Greater Kansas City area
                     </p>
                 </div>
                 <!-- Footer Social Icons-->
-                <div @*class="col-lg-4 mb-5 mb-lg-0"*@>
-                    <h4 @*class="text-uppercase mb-4"*@>Around the Web</h4>
-                    <a @*class="btn btn-outline-light btn-social mx-1"*@ href="https://github.com/Swiftyfast" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a @*class="btn btn-outline-light btn-social mx-1"*@ href="mailto:jdavidswift@gmail.com"><i class="fa fa-file-text" aria-hidden="true"></i></a>
-                    <a @*class="btn btn-outline-light btn-social mx-1"*@ href="https://www.linkedin.com/in/john-swift-b20730137/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Swiftyfast" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="mailto:jdavidswift@gmail.com"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/john-swift-b20730137/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                 </div>
                 <!-- Footer About Text-->
-                <div @*class="col-lg-4"*@>
-                    <h4 @*class="text-uppercase mb-4"*@>This template</h4>
-                    <p @*class="lead mb-0"*@>
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">This template</h4>
+                    <p class="lead mb-0">
                         Freelance is a free to use, MIT licensed Bootstrap theme created by
                         <a href="http://startbootstrap.com">Start Bootstrap</a>
                         .
@@ -61,8 +73,8 @@
         </div>
     </footer>
     <!-- Copyright Section-->
-    <div @*class="copyright py-4 text-center text-white"*@>
-        <div @*class="container"*@><small>Copyright © Your Website 2020</small></div>
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright © Your Website 2020</small></div>
     </div>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     @* Removing the below, don't think I'll use it at all *@
