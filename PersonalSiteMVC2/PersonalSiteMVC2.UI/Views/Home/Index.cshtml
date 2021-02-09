@@ -3,7 +3,7 @@
 }
 <!-- Masthead-->
 <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
+    <div @*class="container d-flex align-items-center flex-column"*@ class="d-flex align-items-center flex-column">
         <!-- Masthead Avatar Image-->
         <img class="masthead-avatar mb-5" src="~/Content/assets/img/HelloJohn_Portrait_sized_copy2.png" alt="A caricature drawing of the website developer" />
         @* The above and below are the img for the masthead. I don't understand why, when you comment out the class, the pic doesn't show, but if its there or is completly deleted it does show. *@
@@ -13,7 +13,7 @@
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
-            <div class="divider-custom-line"><i class="fa fa-star" aria-hidden="true"></i></div>
+            <div @*class="divider-custom-line"*@><i class="fa fa-star fa-3x blackText" aria-hidden="true"></i></div>
             <div class="divider-custom-line"></div>
         </div>
         <!-- Masthead Subheading-->
@@ -22,13 +22,13 @@
 </header>
 <!-- About Section-->
 <section class="page-section bg-primary text-white mb-0" id="about">
-    <div class="container">
+    <div @*class="container"*@>
         <!-- About Section Heading-->
         <h2 class="page-section-heading text-center text-uppercase blackText">About</h2>
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
-            <div class="divider-custom-line"><i class="fa fa-star" aria-hidden="true"></i></div>
+            <div @*class="divider-custom-line"*@><i class="fa fa-star fa-3x blackText" aria-hidden="true"></i></div>
             <div class="divider-custom-line"></div>
         </div>
         <!-- About Section Content-->
