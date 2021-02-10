@@ -199,3 +199,8 @@ a {
         position: static;
     }
 }
+
+.myPrimary{
+    background-color: #159a80;
+    color: #ffffff;
+}
