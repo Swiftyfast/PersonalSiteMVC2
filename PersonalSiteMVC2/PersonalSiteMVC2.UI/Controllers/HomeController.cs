@@ -22,5 +22,10 @@ namespace PersonalSiteMVC2.UI.Controllers
         {
             return View();
         }
+
+        public ActionResult Resume()
+        {
+            return View();
+        }
     }
 }

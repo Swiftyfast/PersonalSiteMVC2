@@ -241,3 +241,14 @@ a {
     /*border-radius: 8em;*/
     border-radius: 50%;
 }
+
+.myCenterText {
+    text-align: center;
+}
+
+    .myCenterText a {
+        color: black;
+        font-size: larger;
+        padding: .75em;
+        border: 1px solid black
+    }
