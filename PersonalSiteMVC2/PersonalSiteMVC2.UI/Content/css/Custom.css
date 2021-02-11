@@ -220,3 +220,24 @@ a {
     margin-right: auto;
     margin-left: auto;
 }
+
+/*This is for trying to get the modal row a certain height*/
+.modal-row-doubles {
+    /*height: 75%;*/
+    flex-flow: row nowrap;
+}
+
+.img-fluid-three {
+    height: 100%;
+    width: auto;
+    /*max-width: 100%;
+    height: auto;*/
+}
+
+.linksToClassmates {
+    max-width: 16em;
+    max-height: 16em;
+    border: .2em black solid;
+    /*border-radius: 8em;*/
+    border-radius: 50%;
+}
