@@ -62,7 +62,7 @@ namespace PersonalSiteMVC2.UI.Controllers
 
             SmtpClient client = new SmtpClient("mail.johndavidswift.com");
             
-            client.Credentials = new NetworkCredential("no-reply@johndavidswift.com", "LOL_NOPE");
+            client.Credentials = new NetworkCredential("no-reply@johndavidswift.com", "Ravens75!");
             client.Port = 8889;
 
             try
