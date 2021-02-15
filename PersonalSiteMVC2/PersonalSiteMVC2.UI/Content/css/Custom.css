@@ -298,3 +298,49 @@ portfolio .portfolio-item {
     text-shadow: 0 1px 0 #fff;
     opacity: 0.5;
 }
+
+.myCloseBtn {
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1E966A;
+}
+
+    /* Type 2 colors */
+    .myCloseBtn.focus, .myCloseBtn:focus {
+        color: #fff;
+        background-color: #0F4A34;
+        border-color: #69D2AC;
+    }
+
+    /* Type 3 colors*/
+    .myCloseBtn:hover {
+        color: #fff;
+        background-color: #1E966A;
+        border-color: #254A3C;
+    }
+
+    /* Type 3 colors*/
+    .myCloseBtn.active, .myCloseBtn:active, .open > .dropdown-toggle.myCloseBtn {
+        color: #fff;
+        background-color: #1E966A;
+        border-color: #254A3C;
+    }
+
+        /* Type 2 colors */
+        .myCloseBtn.active.focus, .myCloseBtn.active:focus, .myCloseBtn.active:hover, .myCloseBtn:active.focus, .myCloseBtn:active:focus, .myCloseBtn:active:hover, .open > .dropdown-toggle.myPrimmyCloseBtn.focus, .open > .dropdown-toggle.myCloseBtn:focus, .open > .dropdown-toggle.myCloseBtn:hover {
+            color: #fff;
+            background-color: #0F4A34;
+            border-color: #69D2AC;
+        }
+
+    /*Type 1 colors*/
+    .myCloseBtn.disabled.focus, .myCloseBtn.disabled:focus, .myCloseBtn.disabled:hover, .myCloseBtn[disabled].focus, .myCloseBtn[disabled]:focus, .myCloseBtn[disabled]:hover, fieldset[disabled] .myCloseBtn.focus, fieldset[disabled] .myCloseBtn:focus, fieldset[disabled] .myCloseBtn:hover {
+        background-color: #1abc9c;
+        border-color: #1E966A;
+    }
+
+    /*Type 1 colors Note the reversal*/
+    .myCloseBtn .badge {
+        color: #1abc9c;
+        background-color: #fff
+    }
