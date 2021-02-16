@@ -289,7 +289,7 @@ portfolio .portfolio-item {
     font-weight: 700;
 }
 
-.modalCloseButton {
+/*.modalCloseButton {
     float: right;
     font-size: 1.5rem;
     font-weight: 700;
@@ -297,7 +297,7 @@ portfolio .portfolio-item {
     color: #000;
     text-shadow: 0 1px 0 #fff;
     opacity: 0.5;
-}
+}*/
 
 .myCloseBtn {
     color: #fff;
@@ -344,3 +344,14 @@ portfolio .portfolio-item {
         color: #1abc9c;
         background-color: #fff
     }
+
+.portfolio-modal .close {
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #1abc9c;
+    opacity: 1;
+}
