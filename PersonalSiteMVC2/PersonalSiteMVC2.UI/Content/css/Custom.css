@@ -6,7 +6,6 @@
     padding-top: calc(6rem + 74px);
     padding-bottom: 6rem;
     background-image: linear-gradient(#1abc9c, #FFFFFF);
-    /*background-image: linear-gradient(#FFFFFF, #1abc9c);*/
 }
 
     .masthead .masthead-heading {
@@ -74,7 +73,6 @@
     }
 
 .bg-primary {
-    /*background-color: #1abc9c !important;*/
     background: linear-gradient(#FFFFFF, #1abc9c);
 }
 
@@ -106,8 +104,6 @@
 
 a {
     color: #FFFFFF;
-    /*Coded out below because it wasn't showing up in links if it breaks other places.*/
-    /*color: #1abc9c;*/
     text-decoration: none;
     background-color: transparent;
 }
@@ -222,8 +218,8 @@ a {
 }
 
 /*This is for trying to get the modal row a certain height*/
+/*I think I removed all of them though*/
 .modal-row-doubles {
-    /*height: 75%;*/
     flex-flow: row nowrap;
 }
 
