@@ -161,9 +161,9 @@ a {
     display: none;
 }
 /*Messing with these numbers doesnt help with anything under ~982px*/
-@media screen and (max-width: 1000px) and (min-width: 400px) {
+/*@media screen and (max-width: 1000px) and (min-width: 400px) {*/
     /*originaly:*/
-    /* @media screen and (max-width: 1000px){ */
+     @media screen and (max-width: 1000px){ 
     nav ul#navbarResponsive {
         display: none;
     }
