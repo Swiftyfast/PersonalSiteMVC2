@@ -163,6 +163,12 @@ a {
 /*Messing with these numbers doesnt help with anything under ~982px*/
 /*@media screen and (max-width: 1000px) and (min-width: 400px) {*/
     /*originaly:*/
+@media screen and (min-width: 1001px) {
+    #menu-btn {
+        display: none;
+    }
+}
+
      @media screen and (max-width: 1000px){ 
     nav ul#navbarResponsive {
         display: none;
